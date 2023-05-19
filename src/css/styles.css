@@ -1,0 +1,390 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #333333;
+    background-image: url('../images/backgorund_landscape.png');
+}
+
+body.modo-escuro {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #f5f5f5;
+    background-image: url('../images/backgroundNight.jpg');
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+header .pokemon_logo{
+    width: 150px;
+}
+
+main {
+    padding: 25px;
+}
+
+main #region-filter{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+main .pokemon-region-filter{
+    width: 100px;
+    display: flex;
+    margin-left: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 15px;
+    box-shadow: #333 0px 2px;
+}
+
+main .pokemon-region-filter-dark{
+    width: 100px;
+    display: flex;
+    margin-left: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 15px;
+    color: rgb(199, 199, 196);
+    box-shadow: white 0px 2px;
+}
+
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+main .cartao-pokemon {
+    background-color: transparent;
+    width: 220px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    border: 2px solid black;
+}
+
+main .cartao-pokemon:hover {
+    transform: scale(1.1);
+}
+
+main .background-Grama:hover {
+    background-color: #d2f0c0;
+}
+
+main .background-Grama-Veneno:hover {
+    background: linear-gradient(to right, #d2f0c0 , #e9aae8fb );
+}
+
+main .background-Fogo:hover {
+    background-color: #e7a06a;
+}
+
+main .background-Fogo-Voador:hover {
+    background: linear-gradient(to right, #e7a06a , #9fdcec, #e4e2e1 );
+}
+
+main .background-Inseto-Voador:hover {
+    background: linear-gradient(to right, #d6dbac , #9fdcec, #e4e2e1 );
+}
+
+main .background-Inseto-Veneno:hover {
+    background: linear-gradient(to right, #d6dbac , #e9aae8fb );
+}
+
+main .background-Normal-Voador:hover {
+    background: linear-gradient(to right, #c5dce0 , #9fdcec, #e4e2e1 );
+}
+
+main .background-Veneno-Terra:hover {
+    background: linear-gradient(to right, #e9aae8fb, #b1ab87 );
+}
+
+main .background-Normal-Fada:hover {
+    background: linear-gradient(to right, #c5dce0, #e58aca );
+}
+
+main .background-Veneno-Voador:hover {
+    background: linear-gradient(to right, #e9aae8fb, #9fdcec, #e4e2e1 );
+}
+
+main .background-Inseto-Grama:hover {
+    background: linear-gradient(to right, #d6dbac, #d2f0c0 );
+}
+
+main .background-Água-Lutador:hover {
+    background: linear-gradient(to right, #afc1e9, #bb8c6f );
+}
+
+main .background-Água-Veneno:hover {
+    background: linear-gradient(to right, #afc1e9, #e9aae8fb );
+}
+
+main .background-Pedra-Terra:hover {
+    background: linear-gradient(to right, #6b685a, #b1ab87 );
+}
+
+main .background-Terra-Pedra:hover {
+    background: linear-gradient(to right, #6b685a, #b1ab87 );
+}
+
+main .background-Água-Psíquico:hover {
+    background: linear-gradient(to right, #afc1e9, #ffaddd );
+}
+
+main .background-Elétrico-Aço:hover {
+    background: linear-gradient(to right, #fae989, #68787a );
+}
+
+main .background-Água-Gelo:hover {
+    background: linear-gradient(to right, #afc1e9, #94cfe0 );
+}
+
+main .background-Fantasma-Veneno:hover {
+    background: linear-gradient(to right, #cbb4f0, #e9aae8fb );
+}
+
+main .background-Grama-Psíquico:hover {
+    background: linear-gradient(to right, #d2f0c0, #ffaddd );
+}
+
+main .background-Psíquico-Fada:hover {
+    background: linear-gradient(to right, #ffaddd, #e58aca);
+}
+
+main .background-Gelo-Psíquico:hover {
+    background: linear-gradient(to right, #94cfe0, #ffaddd);
+}
+
+main .background-Água-Voador:hover {
+    background: linear-gradient(to right, #afc1e9, #9fdcec, #e4e2e1);
+}
+
+main .background-Pedra-Água:hover {
+    background: linear-gradient(to right, #b1a77d, #afc1e9);
+}
+
+main .background-Pedra-Voador:hover {
+    background: linear-gradient(to right, #b1a77d, #9fdcec, #e4e2e1);
+}
+
+main .background-Gelo-Voador:hover {
+    background: linear-gradient(to right, #94cfe0, #9fdcec, #e4e2e1);
+}
+
+main .background-Elétrico-Voador:hover {
+    background: linear-gradient(to right, #fae989, #9fdcec, #e4e2e1);
+}
+
+main .background-Dragão-Voador:hover {
+    background: linear-gradient(to right, #94cae7 , #ee9889);
+}
+
+main .background-Água:hover {
+    background-color: #afc1e9;
+}
+
+main .background-Inseto:hover {
+    background-color: #d6dbac;
+}
+
+main .background-Normal:hover {
+    background-color: #c5dce0;
+}
+
+main .background-Veneno:hover {
+    background-color: #e9aae8fb;
+}
+
+main .background-Elétrico:hover {
+    background-color: #fae989;
+}
+
+main .background-Terra:hover {
+    background-color: #b1ab87;
+}
+
+main .background-Fada:hover {
+    background-color: #e58aca;
+}
+
+main .background-Lutador:hover {
+    background-color: #bb8c6f;
+}
+
+main .background-Psíquico:hover {
+    background-color: #ffaddd;
+}
+
+main .background-Pedra:hover {
+    background-color: #b1a77d;
+}
+
+main .background-Fantasma:hover {
+    background-color: #cbb4f0;
+}
+
+main .background-Gelo:hover {
+    background-color: #94cfe0;
+}
+
+main .background-Dragão:hover {
+    background: linear-gradient(to right, #94cae7 , #ee9889 );
+}
+
+
+.modo-escuro .cartao-pokemon {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    background-color: #68787a;
+    box-shadow: #333 0px 2px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 10px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.água {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.voador {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc7ef;
+}
+
+.normal {
+    background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background-color: #a4acaf;
+}
+
+.elétrico {
+    background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background-color: #eed535;
+}
+
+.terra {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+}
+
+.fada {
+    background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background-color: #fdb9e9;
+}
+
+.psíquico {
+    background-color: #f366b9;
+}
+
+.lutador {
+    background-color: #d56723;
+}
+
+.pedra {
+    background-color: #a38c21;
+}
+
+.aço {
+    background-color: #9eb7b8;
+}
+
+.gelo {
+    background-color: #51c4e7;
+}
+
+.fantasma {
+    background-color: #7b62a3;
+}
+
+.dragão {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+

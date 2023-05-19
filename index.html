@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+ 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/scrollbar.css">
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <img src="./src/imagens/pokeball.png" alt="pokebola" class="logo" />
+    </a>
+    <a>
+      <img src="./src/imagens/pokemon_logo.png" alt="pokemon_logo" class="pokemon_logo" />
+    </a>
+    <button id="botao-alterar-tema">
+      <img src="./src/imagens/sun.png" alt="imagem do sol" class="imagem-botao" />
+    </button>
+  </header>
+  <main>
+    <div id="region-filter">
+      <label for="pokemon-region">Escolha uma região:</label>
+      <select onchange="fetchPokemonData()" id="region-selector" name="pokemon-region" class="pokemon-region-filter">
+        <option value="Kanto">Kanto</option>
+        <option value="Johto">Johto</option>
+        <option value="Hoenn">Hoenn</option>
+        <option value="Sinnoh">Sinnoh</option>
+        <option value="Unova">Unova</option>
+        <option value="Kalos">Kalos</option>
+        <option value="Alola">Alola</option>
+        <option value="Galar">Galar</option>
+        <option value="Paldea">Paldea</option>
+      </select>
+    </div>    
+    <ul id="pokedex" class="listagem-pokemon">
+    </ul>
+  </main>
+    <script src="./src/js/index.js"></script>
+  </body>
