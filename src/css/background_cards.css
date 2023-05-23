@@ -1,0 +1,908 @@
+:root {
+    --grama: #d2f0c0;
+    --agua: #88aeff;
+    --fogo: #f09c5c;
+    --sombrio: #868686;
+    --inseto: #d6dbac;
+    --normal: #c5dce0;
+    --veneno: #e9aae8fb;
+    --eletrico: #fae989;
+    --terra: #b1ab87;
+    --fada: #e58aca;
+    --lutador: #bb8c6f;
+    --psiquico: #ffaddd;
+    --pedra: #b1a77d;
+    --fantasma: #cbb4f0;
+    --gelo: #94cfe0;
+    --aco: #68787a;
+    --voador: #9fdcec, #e4e2e1;
+    --dragao: #94cae7 , #ee9889;
+  }
+
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.água {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.sombrio {
+    background-color: #707070;
+}
+
+.voador {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc7ef;
+}
+
+.normal {
+    background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background-color: #a4acaf;
+}
+
+.elétrico {
+    background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background-color: #eed535;
+}
+
+.terra {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+}
+
+.fada {
+    background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background-color: #fdb9e9;
+}
+
+.psíquico {
+    background-color: #f366b9;
+}
+
+.lutador {
+    background-color: #d56723;
+}
+
+.pedra {
+    background-color: #a38c21;
+}
+
+.aço {
+    background-color: #9eb7b8;
+}
+
+.gelo {
+    background-color: #51c4e7;
+}
+
+.fantasma {
+    background-color: #7b62a3;
+}
+
+.dragão {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf;
+}
+
+main .background-Grama:hover {
+    background-color: var(--grama);
+}
+
+main .background-Fogo:hover {
+    background-color: var(--fogo);
+}
+
+main .background-Sombrio:hover{
+    background-color: var(--sombrio);
+}
+
+main .background-Água:hover {
+    background-color: var(--agua);
+}
+
+main .background-Inseto:hover {
+    background-color: var(--inseto);
+}
+
+main .background-Normal:hover {
+    background-color: var(--normal);
+}
+
+main .background-Veneno:hover {
+    background-color: var(--veneno);
+}
+
+main .background-Elétrico:hover {
+    background-color: var(--eletrico);
+}
+
+main .background-Terra:hover {
+    background-color: var(--terra);
+}
+
+main .background-Fada:hover {
+    background-color: var(--fada);
+}
+
+main .background-Lutador:hover {
+    background-color: var(--lutador);
+}
+
+main .background-Psíquico:hover {
+    background-color: var(--psiquico);
+}
+
+main .background-Pedra:hover {
+    background-color: var(--pedra);
+}
+
+main .background-Fantasma:hover {
+    background-color: var(--fantasma);
+}
+
+main .background-Gelo:hover {
+    background-color: var(--gelo);
+}
+
+main .background-Aço:hover {
+    background-color: var(--aco);
+}
+
+
+main .background-Grama-Veneno:hover {
+    background: linear-gradient(to right, var(--grama) , var(--veneno) );
+}
+
+main .background-Grama-Gelo:hover {
+    background: linear-gradient(to right, var(--grama) , var(--gelo) );
+}
+
+main .background-Grama-Terra:hover {
+    background: linear-gradient(to right, var(--grama) , var(--terra) );
+}
+
+main .background-Grama-Voador:hover {
+    background: linear-gradient(to right, var(--grama) , var(--voador) );
+}
+
+main .background-Grama-Sombrio:hover {
+    background: linear-gradient(to right, var(--grama) , var(--sombrio) );
+}
+
+main .background-Grama-Lutador:hover {
+    background: linear-gradient(to right, var(--grama) , var(--lutador) );
+}
+
+main .background-Grama-Fada:hover {
+    background: linear-gradient(to right, var(--grama) , var(--fada) );
+}
+
+main .background-Inseto-Água:hover {
+    background: linear-gradient(to right, var(--inseto) , var(--agua) );
+}
+
+main .background-Inseto-Terra:hover {
+    background: linear-gradient(to right, var(--inseto) , var(--terra) );
+}
+
+main .background-Inseto-Fantasma:hover {
+    background: linear-gradient(to right, var(--inseto) , var(--fantasma) );
+}
+
+main .background-Água-Grama:hover {
+    background: linear-gradient(to right, var(--agua), var(--grama)  );
+}
+
+main .background-Água-Aço:hover {
+    background: linear-gradient(to right, var(--agua), var(--aco)  );
+}
+
+main .background-Água-Pedra:hover {
+    background: linear-gradient(to right, var(--agua), var(--pedra)  );
+}
+
+main .background-Água-Elétrico:hover {
+    background: linear-gradient(to right, var(--agua), var(--eletrico)  );
+}
+
+main .background-Água-Fada:hover {
+    background: linear-gradient(to right, var(--agua), var(--fada)  );
+}
+
+main .background-Fogo-Voador:hover {
+    background: linear-gradient(to right, var(--fogo) , var(--voador) );
+}
+
+main .background-Fogo-Normal:hover {
+    background: linear-gradient(to right, var(--fogo) , var(--normal) );
+}
+
+main .background-Lutador-Sombrio:hover {
+    background: linear-gradient(to right, var(--lutador) , var(--sombrio) );
+}
+
+main .background-Aço-Fantasma:hover {
+    background: linear-gradient(to right, var(--aco) , var(--fantasma) );
+}
+
+main .background-Sombrio-Psíquico:hover {
+    background: linear-gradient(to right, var(--sombrio) , var(--psiquico) );
+}
+
+main .background-Veneno-Água:hover {
+    background: linear-gradient(to right, var(--veneno) , var(--agua) );
+}
+
+main .background-Veneno-Dragão:hover {
+    background: linear-gradient(to right, var(--veneno) , var(--dragao) );
+}
+
+main .background-Elétrico-Normal:hover {
+    background: linear-gradient(to right, var(--eletrico) , var(--normal) );
+}
+
+main .background-Fada-Voador:hover {
+    background: linear-gradient(to right, var(--fada) , var(--voador) );
+}
+
+main .background-Psíquico-Voador:hover {
+    background: linear-gradient(to right, var(--psiquico) , var(--voador) );
+}
+
+main .background-Psíquico-Fogo:hover {
+    background: linear-gradient(to right, var(--psiquico) , var(--fogo) );
+}
+
+main .background-Inseto-Voador:hover {
+    background: linear-gradient(to right, var(--inseto) , var(--voador) );
+}
+
+main .background-Inseto-Veneno:hover {
+    background: linear-gradient(to right, var(--inseto) , var(--veneno) );
+}
+
+main .background-Normal-Voador:hover {
+    background: linear-gradient(to right, var(--normal) , var(--voador) );
+}
+
+main .background-Normal-Terra:hover {
+    background: linear-gradient(to right, var(--normal) , var(--terra) );
+}
+
+main .background-Normal-Psíquico:hover {
+    background: linear-gradient(to right, var(--normal) , var(--psiquico));
+}
+
+main .background-Normal-Água:hover {
+    background: linear-gradient(to right, var(--normal) , var(--agua) );
+}
+
+main .background-Normal-Grama:hover {
+    background: linear-gradient(to right, var(--normal) , var(--grama) );
+}
+
+main .background-Veneno-Terra:hover {
+    background: linear-gradient(to right, var(--veneno), var(--terra) );
+}
+
+main .background-Veneno-Lutador:hover {
+    background: linear-gradient(to right, var(--veneno), var(--lutador) );
+}
+
+main .background-Veneno-Inseto:hover {
+    background: linear-gradient(to right, var(--veneno), var(--inseto) );
+}
+
+main .background-Veneno-Sombrio:hover {
+    background: linear-gradient(to right, var(--veneno), var(--sombrio) );
+}
+
+main .background-Normal-Fada:hover {
+    background: linear-gradient(to right, var(--normal), var(--fada) );
+}
+
+main .background-Veneno-Voador:hover {
+    background: linear-gradient(to right, var(--veneno), var(--voador) );
+}
+
+main .background-Inseto-Grama:hover {
+    background: linear-gradient(to right, var(--inseto), var(--grama) );
+}
+
+main .background-Inseto-Aço:hover {
+    background: linear-gradient(to right, var(--inseto), var(--aco) );
+}
+
+main .background-Inseto-Pedra:hover {
+    background: linear-gradient(to right, var(--inseto), var(--pedra) );
+}
+
+main .background-Inseto-Lutador:hover {
+    background: linear-gradient(to right, var(--inseto), var(--lutador) );
+}
+
+main .background-Inseto-Elétrico:hover {
+    background: linear-gradient(to right, var(--inseto), var(--eletrico));
+}
+
+main .background-Água-Lutador:hover {
+    background: linear-gradient(to right, var(--agua), var(--lutador) );
+}
+
+main .background-Água-Fantasma:hover {
+    background: linear-gradient(to right, var(--agua), var(--fantasma) );
+}
+
+main .background-Água-Veneno:hover {
+    background: linear-gradient(to right, var(--agua), var(--veneno) );
+}
+
+main .background-Pedra-Terra:hover {
+    background: linear-gradient(to right, var(--pedra), var(--terra) );
+}
+
+main .background-Pedra-Aço:hover {
+    background: linear-gradient(to right, var(--pedra), var(--aco) );
+}
+
+main .background-Terra-Pedra:hover {
+    background: linear-gradient(to right,  var(--terra), var(--pedra) );
+}
+
+main .background-Terra-Sombrio:hover {
+    background: linear-gradient(to right,  var(--terra), var(--sombrio) );
+}
+
+main .background-Terra-Fantasma:hover {
+    background: linear-gradient(to right,  var(--terra), var(--fantasma) );
+}
+
+main .background-Terra-Elétrico:hover {
+    background: linear-gradient(to right,  var(--terra), var(--eletrico) );
+}
+
+main .background-Terra-Voador:hover {
+    background: linear-gradient(to right, var(--terra), var(--voador) );
+}
+
+main .background-Água-Psíquico:hover {
+    background: linear-gradient(to right, var(--agua), var(--psiquico) );
+}
+
+main .background-Elétrico-Aço:hover {
+    background: linear-gradient(to right, var(--eletrico), var(--aco) );
+}
+
+main .background-Água-Gelo:hover {
+    background: linear-gradient(to right, var(--agua), var(--gelo) );
+}
+
+main .background-Fantasma-Veneno:hover {
+    background: linear-gradient(to right, var(--fantasma), var(--veneno) );
+}
+
+main .background-Fantasma-Dragão:hover {
+    background: linear-gradient(to right, var(--fantasma), var(--dragao) );
+}
+
+main .background-Fantasma-Sombrio:hover {
+    background: linear-gradient(to right, var(--fantasma), var(--sombrio) );
+}
+
+main .background-Fantasma-Fogo:hover {
+    background: linear-gradient(to right, var(--fantasma), var(--fogo) );
+}
+
+main .background-Fantasma-Voador:hover {
+    background: linear-gradient(to right, var(--fantasma), var(--voador) );
+}
+
+main .background-Grama-Psíquico:hover {
+    background: linear-gradient(to right, var(--grama), var(--psiquico) );
+}
+
+main .background-Grama-Aço:hover {
+    background: linear-gradient(to right, var(--grama), var(--aco) );
+}
+
+main .background-Psíquico-Fada:hover {
+    background: linear-gradient(to right, var(--psiquico), var(--fada));
+}
+
+main .background-Psíquico-Grama:hover {
+    background: linear-gradient(to right, var(--psiquico), var(--grama));
+}
+
+main .background-Psíquico-Lutador:hover {
+    background: linear-gradient(to right, var(--psiquico), var(--lutador));
+}
+
+main .background-Gelo-Psíquico:hover {
+    background: linear-gradient(to right, var(--gelo), var(--psiquico));
+}
+
+main .background-Gelo-Terra:hover {
+    background: linear-gradient(to right, var(--gelo), var(--terra));
+}
+
+main .background-Água-Voador:hover {
+    background: linear-gradient(to right, var(--agua), var(--voador));
+}
+
+main .background-Pedra-Água:hover {
+    background: linear-gradient(to right, var(--pedra), var(--agua));
+}
+
+main .background-Pedra-Voador:hover {
+    background: linear-gradient(to right, var(--pedra), var(--voador));
+}
+
+main .background-Gelo-Voador:hover {
+    background: linear-gradient(to right, var(--gelo), var(--voador));
+}
+
+main .background-Elétrico-Voador:hover {
+    background: linear-gradient(to right, var(--eletrico), var(--voador));
+}
+
+main .background-Elétrico-Fantasma:hover {
+    background: linear-gradient(to right, var(--eletrico), var(--fantasma));
+}
+
+main .background-Gelo-Fantasma:hover {
+    background: linear-gradient(to right, var(--gelo), var(--fantasma));
+}
+
+main .background-Dragão-Voador:hover {
+    background: linear-gradient(to right, var(--dragao));
+}
+
+main .background-Dragão-Terra:hover {
+    background: linear-gradient(to right, var(--dragao), var(--terra));
+}
+
+main .background-Dragão-Fogo:hover {
+    background: linear-gradient(to right, var(--dragao), var(--fogo));
+}
+
+main .background-Dragão-Elétrico:hover {
+    background: linear-gradient(to right, var(--dragao), var(--eletrico));
+}
+
+main .background-Dragão-Gelo:hover {
+    background: linear-gradient(to right, var(--dragao), var(--gelo));
+}
+
+main .background-Dragão:hover {
+    background: linear-gradient(to right, var(--dragao) );
+}
+
+main .background-Voador:hover {
+    background: linear-gradient(to right, var(--voador) );
+}
+
+main .background-Fogo-Lutador:hover{
+    background: linear-gradient(to right, var(--fogo), var(--lutador)  );
+}
+
+main .background-Fogo-Psíquico:hover{
+    background: linear-gradient(to right, var(--fogo), var(--psiquico)  );
+}
+
+main .background-Fogo-Terra:hover{
+    background: linear-gradient(to right, var(--fogo), var(--terra)  );
+}
+
+main .background-Fogo-Aço:hover{
+    background: linear-gradient(to right, var(--fogo), var(--aco)  );
+}
+
+main .background-Fogo-Pedra:hover{
+    background: linear-gradient(to right, var(--fogo), var(--pedra)  );
+}
+
+main .background-Água-Terra:hover{
+    background: linear-gradient(to right, var(--agua), var(--terra)  );
+}
+
+main .background-Sombrio-Fantasma:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--fantasma)  );
+}
+
+main .background-Sombrio-Fantasma:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--dragao)  );
+}
+
+main .background-Sombrio-Aço:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--aco)  );
+}
+
+main .background-Sombrio-Lutador:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--lutador)  );
+}
+
+main .background-Sombrio-Gelo:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--gelo) );
+}
+
+main .background-Sombrio-Fogo:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--fogo) );
+}
+
+main .background-Sombrio-Voador:hover{
+    background: linear-gradient(to right, var(--sombrio), var(--voador)  );
+}
+
+main .background-Aço-Dragão:hover{
+    background: linear-gradient(to right, var(--aco), var(--dragao) );
+}
+
+main .background-Aço-Voador:hover{
+    background: linear-gradient(to right, var(--aco), var(--voador) );
+}
+
+main .background-Aço-Fada:hover{
+    background: linear-gradient(to right, var(--aco), var(--fada) );
+}
+
+main .background-Aço-Psíquico:hover{
+    background: linear-gradient(to right, var(--aco), var(--psiquico) );
+}
+
+main .background-Aço-Pedra:hover{
+    background: linear-gradient(to right, var(--aco), var(--pedra) );
+}
+
+main .background-Aço-Terra:hover{
+    background: linear-gradient(to right, var(--aco), var(--terra) );
+}
+
+main .background-Lutador-Psíquico:hover{
+    background: linear-gradient(to right, var(--lutador), var(--psiquico));
+}
+
+main .background-Lutador-Aço:hover{
+    background: linear-gradient(to right, var(--lutador), var(--aco));
+}
+
+main .background-Água-Sombrio:hover{
+    background: linear-gradient(to right, var(--agua), var(--sombrio));
+}
+
+main .background-Terra-Dragão:hover {
+    background: linear-gradient(to right, var(--terra), var(--dragao) );
+}
+
+main .background-Água-Dragão:hover {
+    background: linear-gradient(to right, var(--agua), var(--dragao) );
+}
+
+main .background-Pedra-Psíquico:hover {
+    background: linear-gradient(to right, var(--pedra), var(--psiquico) );
+}
+
+main .background-Pedra-Sombrio:hover {
+    background: linear-gradient(to right, var(--pedra), var(--sombrio) );
+}
+
+main .background-Terra-Psíquico:hover {
+    background: linear-gradient(to right, var(--terra), var(--psiquico) );
+}
+
+main .background-Terra-Aço:hover {
+    background: linear-gradient(to right, var(--terra), var(--aco) );
+}
+
+main .background-Pedra-Grama:hover {
+    background: linear-gradient(to right, var(--pedra), var(--grama) );
+}
+
+main .background-Pedra-Inseto:hover {
+    background: linear-gradient(to right, var(--pedra), var(--inseto) );
+}
+
+main .background-Gelo-Água:hover {
+    background: linear-gradient(to right, var(--gelo), var(--agua) );
+}
+
+main .background-Dragão-Psíquico:hover {
+    background: linear-gradient(to right, var(--dragao),var(--psiquico) );
+}
+
+main .background-Sombrio-Dragão:hover {
+    background: linear-gradient(to right, var(--sombrio),var(--dragao) );
+}
+
+main .background-Inseto-Fogo:hover {
+    background: linear-gradient(to right, var(--inseto),var(--fogo) );
+}
+
+main .background-Aço-Lutador:hover {
+    background: linear-gradient(to right, var(--aco),var(--lutador) );
+}
+
+main .background-Pedra-Lutador:hover {
+    background: linear-gradient(to right, var(--pedra),var(--lutador) );
+}
+
+main .background-Pedra-Dragão:hover {
+    background: linear-gradient(to right, var(--pedra),var(--dragao) );
+}
+
+main .background-Pedra-Gelo:hover {
+    background: linear-gradient(to right, var(--pedra),var(--gelo) );
+}
+
+main .background-Lutador-Voador:hover {
+    background: linear-gradient(to right, var(--lutador),var(--voador) );
+}
+
+main .background-Fantasma-Grama:hover {
+    background: linear-gradient(to right, var(--fantasma),var(--grama) );
+}
+
+main .background-Elétrico-Fada:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--fada) );
+}
+
+main .background-Pedra-Fada:hover {
+    background: linear-gradient(to right, var(--pedra),var(--fada) );
+}
+
+main .background-Voador-Dragão:hover {
+    background: linear-gradient(to right, var(--voador),var(--dragao) );
+}
+
+main .background-Psíquico-Fantasma:hover {
+    background: linear-gradient(to right, var(--psiquico),var(--fantasma) );
+}
+
+main .background-Fogo-Água:hover {
+    background: linear-gradient(to right, var(--fogo),var(--agua) );
+}
+
+main .background-Água-Fogo:hover {
+    background: linear-gradient(to right, var(--agua),var(--fogo) );
+}
+
+main .background-Água-Inseto:hover {
+    background: linear-gradient(to right, var(--agua),var(--inseto) );
+}
+
+main .background-Grama-Fantasma:hover {
+    background: linear-gradient(to right, var(--grama),var(--fantasma) );
+}
+
+main .background-Fogo-Sombrio:hover {
+    background: linear-gradient(to right, var(--fogo),var(--sombrio) );
+}
+
+main .background-Lutador-Gelo:hover {
+    background: linear-gradient(to right, var(--lutador),var(--gelo) );
+}
+
+main .background-Inseto-Fada:hover {
+    background: linear-gradient(to right, var(--inseto),var(--fada) );
+}
+
+main .background-Veneno-Fogo:hover {
+    background: linear-gradient(to right, var(--veneno),var(--fogo) );
+}
+
+main .background-Normal-Lutador:hover {
+    background: linear-gradient(to right, var(--normal),var(--lutador) );
+}
+
+main .background-Fantasma-Terra:hover {
+    background: linear-gradient(to right, var(--fantasma),var(--terra) );
+}
+
+main .background-Fogo-Dragão:hover {
+    background: linear-gradient(to right, var(--fogo),var(--dragao) );
+}
+
+main .background-Fantasma-Fada:hover {
+    background: linear-gradient(to right, var(--fantasma),var(--fada) );
+}
+
+main .background-Normal-Dragão:hover {
+    background: linear-gradient(to right, var(--normal),var(--dragao) );
+}
+
+main .background-Dragão-Lutador:hover {
+    background: linear-gradient(to right, var(--dragao),var(--lutador) );
+}
+
+main .background-Psíquico-Aço:hover {
+    background: linear-gradient(to right, var(--psiquico),var(--aco) );
+}
+
+main .background-Pedra-Veneno:hover {
+    background: linear-gradient(to right, var(--pedra),var(--veneno) );
+}
+
+main .background-Lutador-Fantasma:hover {
+    background: linear-gradient(to right, var(--lutador),var(--fantasma) );
+}
+
+main .background-Fogo-Fantasma:hover {
+    background: linear-gradient(to right, var(--fogo),var(--fantasma) );
+}
+
+main .background-Voador-Aço:hover {
+    background: linear-gradient(to right, var(--voador),var(--aco) );
+}
+
+main .background-Inseto-Psíquico:hover {
+    background: linear-gradient(to right, var(--inseto),var(--psiquico) );
+}
+
+main .background-Pedra-Fogo:hover {
+    background: linear-gradient(to right, var(--pedra),var(--fogo) );
+}
+
+main .background-Grama-Dragão:hover {
+    background: linear-gradient(to right, var(--grama),var(--dragao) );
+}
+
+main .background-Voador-Água:hover {
+    background: linear-gradient(to right, var(--voador),var(--agua) );
+}
+
+main .background-Elétrico-Veneno:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--veneno) );
+}
+
+main .background-Fogo-Inseto:hover {
+    background: linear-gradient(to right, var(--fogo),var(--inseto) );
+}
+
+main .background-Sombrio-Fada:hover {
+    background: linear-gradient(to right, var(--sombrio),var(--fada) );
+}
+
+main .background-Sombrio-Normal:hover {
+    background: linear-gradient(to right, var(--sombrio),var(--normal) );
+}
+
+main .background-Gelo-Inseto:hover {
+    background: linear-gradient(to right, var(--gelo),var(--inseto) );
+}
+
+main .background-Psíquico-Normal:hover {
+    background: linear-gradient(to right, var(--psiquico),var(--normal) );
+}
+
+main .background-Elétrico-Sombrio:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--sombrio) );
+}
+
+main .background-Elétrico-Dragão:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--dragao) );
+}
+
+main .background-Elétrico-Gelo:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--gelo) );
+}
+
+main .background-Elétrico-Lutador:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--lutador) );
+}
+
+main .background-Elétrico-Terra:hover {
+    background: linear-gradient(to right, var(--eletrico),var(--terra) );
+}
+
+main .background-Lutador-Elétrico:hover {
+    background: linear-gradient(to right, var(--lutador),var(--eletrico) );
+}
+
+main .background-Dragão-Fantasma:hover {
+    background: linear-gradient(to right, var(--dragao),var(--fantasma) );
+}
+
+main .background-Sombrio-Grama:hover {
+    background: linear-gradient(to right, var(--sombrio),var(--grama) );
+}
+
+main .background-Terra-Normal:hover {
+    background: linear-gradient(to right, var(--terra),var(--normal) );
+}
+
+main .background-Lutador-Veneno:hover {
+    background: linear-gradient(to right, var(--lutador),var(--veneno) );
+}
+
+main .background-Sombrio-Veneno:hover {
+    background: linear-gradient(to right, var(--sombrio),var(--veneno) );
+}
+
+main .background-Inseto-Sombrio:hover {
+    background: linear-gradient(to right, var(--inseto),var(--sombrio) );
+}
+
+main .background-Grama-Normal:hover {
+    background: linear-gradient(to right, var(--grama),var(--normal) );
+}
+
+main .background-Veneno-Normal:hover {
+    background: linear-gradient(to right, var(--veneno),var(--normal) );
+}
+
+main .background-Terra-Grama:hover {
+    background: linear-gradient(to right, var(--terra),var(--grama) );
+}
+
+main .background-Grama-Fogo:hover {
+    background: linear-gradient(to right, var(--grama),var(--fogo) );
+}
+
+main .background-Fada-Aço:hover {
+    background: linear-gradient(to right, var(--fada),var(--aco) );
+}
+
+main .background-Voador-Sombrio:hover {
+    background: linear-gradient(to right, var(--voador),var(--sombrio) );
+}
+
+main .background-Aço-Veneno:hover {
+    background: linear-gradient(to right, var(--aco),var(--veneno) );
+}
+
+main .background-Dragão-Normal:hover {
+    background: linear-gradient(to right, var(--dragao),var(--normal) );
+}
+
+main .background-Dragão-Água:hover {
+    background: linear-gradient(to right, var(--dragao),var(--agua) );
+}
+
+main .background-Terra-Lutador:hover {
+    background: linear-gradient(to right, var(--terra),var(--lutador) );
+}
+
+main .background-Fada-Psíquico:hover {
+    background: linear-gradient(to right, var(--fada),var(--psiquico) );
+}
+
+main .background-Voador-Lutador:hover {
+    background: linear-gradient(to right, var(--voador),var(--lutador) );
+}
+
+main .background-Fogo-Veneno:hover {
+    background: linear-gradient(to right, var(--fogo),var(--veneno) );
+}
+
+main .background-Pedra-Elétrico:hover {
+    background: linear-gradient(to right, var(--pedra),var(--eletrico) );
+}
+
+main .background-Sombrio-Terra:hover {
+    background: linear-gradient(to right, var(--sombrio),var(--terra) );
+}
+
+main .background-Dragão-Sombrio:hover {
+    background: linear-gradient(to right, var(--dragao),var(--sombrio) );
+}
+
+main .background-Fada-Lutador:hover {
+    background: linear-gradient(to right, var(--fada),var(--lutador) );
+}
+
+main .background-Lutador-Dragão:hover {
+    background: linear-gradient(to right, var(--lutador),var(--dragao) );
+}

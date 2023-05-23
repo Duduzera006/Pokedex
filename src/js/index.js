@@ -20,38 +20,36 @@ botaoAlterarTema.addEventListener("click", () => {
 })
 
 
-
-
-
-
-
-
 async function fetchPokemonData() {
     try {
         debugger;
         const regionSelected = document.getElementById("region-selector");
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=809');
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1010');
         const data = await response.json();
         let pokemonList = data.results;
         const pokedex = document.getElementById("pokedex");
         pokedex.innerHTML = '';
-        
-        if (regionSelected.value == "Kanto"){
-            pokemonList = pokemonList.slice(0,151)
-        }else if (regionSelected.value == "Johto") {
-            pokemonList = pokemonList.slice(151,251)
-        } else if (regionSelected.value == "Hoenn"){
-            pokemonList = pokemonList.slice(251,386)
-        } else if (regionSelected.value == "Sinnoh"){
-            pokemonList = pokemonList.slice(387,493)
-        } else if (regionSelected.value == "Unova"){
-            pokemonList = pokemonList.slice(494,649)
-        } else if (regionSelected.value == "Kalos"){
-            pokemonList = pokemonList.slice(650,721)
-        } else if (regionSelected.value == "Alola"){
-            pokemonList = pokemonList.slice(722,809)
-        } 
-        
+
+        if (regionSelected.value == "Kanto") {
+            pokemonList = pokemonList.slice(0, 151)
+        } else if (regionSelected.value == "Johto") {
+            pokemonList = pokemonList.slice(151, 251)
+        } else if (regionSelected.value == "Hoenn") {
+            pokemonList = pokemonList.slice(251, 386)
+        } else if (regionSelected.value == "Sinnoh") {
+            pokemonList = pokemonList.slice(386, 494)
+        } else if (regionSelected.value == "Unova") {
+            pokemonList = pokemonList.slice(494, 649)
+        } else if (regionSelected.value == "Kalos") {
+            pokemonList = pokemonList.slice(649, 721)
+        } else if (regionSelected.value == "Alola") {
+            pokemonList = pokemonList.slice(721, 809)
+        } else if (regionSelected.value == "Galar") {
+            pokemonList = pokemonList.slice(809, 905)
+        } else if (regionSelected.value == "Paldea") {
+            pokemonList = pokemonList.slice(905, 1010)
+        }
+
         for (const pokemon of pokemonList) {
             const pokemonID = getPokemonIDFromURL(pokemon.url);
             const pokemonTypes = await getPokemonTypesFromURL(pokemon.url);
@@ -81,10 +79,25 @@ async function fetchPokemonData() {
             infoDiv.appendChild(nameSpan);
             infoDiv.appendChild(numberSpan);
 
+            const gifDiv = document.createElement("div");
+            gifDiv.classList.add("gifDiv");
+
             const image = document.createElement("img");
+            if (pokemonID < 650){
             image.src = `./src/images/${pokemonID}.gif`
+            }else{
+                image.src = `./src/images/${pokemonID}.png`
+            }
             image.alt = pokemon.name;
-            image.classList.add("gif");
+
+            const height = image.height;
+            const width = image.width;
+
+            if (height > 90 || width > 90) {
+                image.classList.add("gif");
+            }
+
+            gifDiv.appendChild(image);
 
             const typesList = document.createElement("ul");
             typesList.classList.add("tipos");
@@ -104,11 +117,12 @@ async function fetchPokemonData() {
             description.textContent = pokemonDescription;
 
             listItem.appendChild(infoDiv);
-            listItem.appendChild(image);
+            listItem.appendChild(gifDiv);
             listItem.appendChild(typesList);
             listItem.appendChild(description);
 
             pokedex.appendChild(listItem);
+
         }
     } catch (error) {
         console.log("Error fetching Pokémon data:", error);
@@ -132,11 +146,24 @@ async function getPokemonTypesFromURL(url) {
 }
 
 async function getPokemonDescription(ID) {
+    debugger;
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${ID}/`);
     const data = await response.json();
-    const textVersion = data.flavor_text_entries[9];
-    const description = textVersion.flavor_text;
-    return description;
+    const dataArray = data.flavor_text_entries;
+    for (const item of dataArray) {
+        if (ID < 387) {
+            if (item.language.name == "en" && item.version.name == "firered") {
+                const description = item.flavor_text;
+                return description;
+            }
+        } else {
+            if (item.language.name == "en") {
+                const description = item.flavor_text;
+                return description;
+            }
+        }
+    }
+    return "No description available";
 }
 
 async function translatePokemonTypes(types) {
@@ -157,7 +184,8 @@ async function translatePokemonTypes(types) {
         rock: 'pedra',
         steel: 'aço',
         ice: 'gelo',
-        dragon: 'dragão'
+        dragon: 'dragão',
+        dark: 'sombrio'
     };
 
     const translatedTypes = types.map(type => typeTranslations[type.type.name] || type.type.name);
