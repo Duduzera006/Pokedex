@@ -20,37 +20,27 @@ botaoAlterarTema.addEventListener("click", () => {
 })
 
 
+
 async function fetchPokemonData() {
     try {
         debugger;
         const regionSelected = document.getElementById("region-selector");
         const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1010');
         const data = await response.json();
-        let pokemonList = data.results;
+        const regionValue = regionSelected.value;
         const pokedex = document.getElementById("pokedex");
+        const wrapper = document.getElementById("wrapper-container")
+        const pokeball = document.getElementById("pokeball-spinner")
+        let pokemonList = data.results;
+        
         pokedex.innerHTML = '';
+        regionSelected.disabled = true;
+        wrapper.classList.add("wrapper");
+        pokeball.classList.add("pokeball");
 
-        if (regionSelected.value == "Kanto") {
-            pokemonList = pokemonList.slice(0, 151)
-        } else if (regionSelected.value == "Johto") {
-            pokemonList = pokemonList.slice(151, 251)
-        } else if (regionSelected.value == "Hoenn") {
-            pokemonList = pokemonList.slice(251, 386)
-        } else if (regionSelected.value == "Sinnoh") {
-            pokemonList = pokemonList.slice(386, 494)
-        } else if (regionSelected.value == "Unova") {
-            pokemonList = pokemonList.slice(494, 649)
-        } else if (regionSelected.value == "Kalos") {
-            pokemonList = pokemonList.slice(649, 721)
-        } else if (regionSelected.value == "Alola") {
-            pokemonList = pokemonList.slice(721, 809)
-        } else if (regionSelected.value == "Galar") {
-            pokemonList = pokemonList.slice(809, 905)
-        } else if (regionSelected.value == "Paldea") {
-            pokemonList = pokemonList.slice(905, 1010)
-        }
+        const regionList = handleSelectedRegion(pokemonList, regionValue);
 
-        for (const pokemon of pokemonList) {
+        for (const pokemon of regionList) {
             const pokemonID = getPokemonIDFromURL(pokemon.url);
             const pokemonTypes = await getPokemonTypesFromURL(pokemon.url);
             const ptBR = await translatePokemonTypes(pokemonTypes);
@@ -83,9 +73,9 @@ async function fetchPokemonData() {
             gifDiv.classList.add("gifDiv");
 
             const image = document.createElement("img");
-            if (pokemonID < 650){
-            image.src = `./src/images/${pokemonID}.gif`
-            }else{
+            if (pokemonID < 650) {
+                image.src = `./src/images/${pokemonID}.gif`
+            } else {
                 image.src = `./src/images/${pokemonID}.png`
             }
             image.alt = pokemon.name;
@@ -120,10 +110,14 @@ async function fetchPokemonData() {
             listItem.appendChild(gifDiv);
             listItem.appendChild(typesList);
             listItem.appendChild(description);
-
             pokedex.appendChild(listItem);
 
         }
+
+        regionSelected.disabled = false;
+        wrapper.classList.remove("wrapper")
+        pokeball.classList.remove("pokeball")
+
     } catch (error) {
         console.log("Error fetching Pokémon data:", error);
     }
@@ -136,6 +130,29 @@ function getPokemonIDFromURL(url) {
         return parseInt(match[1], 10);
     }
     return null;
+}
+
+function handleSelectedRegion(list, region){
+    if (region == "Kanto") {
+        list = list.slice(0, 151)
+    } else if (region == "Johto") {
+        list = list.slice(151, 251)
+    } else if (region == "Hoenn") {
+        list = list.slice(251, 386)
+    } else if (region == "Sinnoh") {
+        list = list.slice(386, 494)
+    } else if (region == "Unova") {
+        list = list.slice(494, 649)
+    } else if (region == "Kalos") {
+        list = list.slice(649, 721)
+    } else if (region == "Alola") {
+        list = list.slice(721, 809)
+    } else if (region == "Galar") {
+        list = list.slice(809, 905)
+    } else if (region == "Paldea") {
+        list = list.slice(905, 1010)
+    }
+    return list;
 }
 
 async function getPokemonTypesFromURL(url) {
